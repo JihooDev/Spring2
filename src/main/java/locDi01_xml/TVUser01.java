@@ -82,7 +82,7 @@ public class TVUser01 {
 		tvi.volumeUp();
 		tvi.powerOff();
 		
-		// ** Test3. Factory
+		// ** Test3. Factory 패턴
 		// => 실행시에 코드 수정없이 클래스(TV) 교체
 	    // => user 의 요구사항(필요한 클래스) Factory에 전달하는 방법
 	    // => xml, @, JavaCode (JavaConfig)

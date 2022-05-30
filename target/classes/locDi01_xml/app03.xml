@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 1) 고전적방법 : 직접 new  ** -->
+	<bean class="locDi01_xml.SsTVs" id="tvs" lazy-init="true" />
+	
+	<!-- 2) IOC/DI : 생성자 주입  ** 
+		-> bean 의 하위태그(constructor-arg) 로 생성자 매개변수를 정의
+	-->
+	<bean class="locDi01_xml.LgTVs" id="tvl" lazy-init="true">
+		<constructor-arg name="speaker" ref="sp" />
+		<constructor-arg name="price" value="123456" />
+		<constructor-arg name="color" value="Sliver" />
+		<!-- 한개라도 없으면 error 발생
+		3개가 있으면 3가지가 있는 멤버변수를 찾음
+		
+		기본자료형이 아닌 경우에는 value 가 아닌 ref 로 지정
+		ref의 값은 bean의 id 와 동일
+		-->
+		
+	</bean>
+	<bean class="locDi01_xml.Speaker" id="sp" lazy-init="true" />
+	
+	<!-- 3) IOC/DI : Setter 주입 
+      => setter 메서드는 <bean> 생성 직후 컨테이너가 자동 호출
+      => 매개변수1개, 2개 모두 Test 
+      => setter 찾는 규칙 (setPrice )  
+            name에 지정된 값으로 setter메서드명 setSp, setColor 를 찾기때문에
+            setter 메서드명과 변수명을 일치시켜야함.  -->
+	<bean class="locDi01_xml.AiTVs" id="tva" lazy-init="true">
+		<property name="speaker" ref="sp" />
+		<property name="price" value="778899"/>
+		<property name="color" value="Red"/>
+	</bean>
+</beans>

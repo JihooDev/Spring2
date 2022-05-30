@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	
-	<!-- ** 설정화일
+	<!-- ** 설정파일
       => 스프링 컨테이너에게 Bean 생성을 요청하는 작업지시서 ** --> 
 <!-- * 클래스 경로는 패키지가 포함된 경로를 지정해야 함 => 패키지.클래스명
     * 기본적으로 등록된 모든 bean을 생성함 

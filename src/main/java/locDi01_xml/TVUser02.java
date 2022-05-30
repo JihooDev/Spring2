@@ -35,7 +35,7 @@ public class TVUser02 {
 	      // => 싱글톤 (한개의 인스턴스만 허용 하는것) 적용 Test
 	      // => 설정화일의 scope 속성 에 "prototype" / "singleton" (default 는 싱글톤)
 	      // => 생성자 실행횟수와 아래의 주소값  확인해보기
-	      //    SsTVi 2개, LgTVi 2개 
+	      //    SsTVi 2개, LgTVi 2개
 	      TV tvs1 = (TV)sc.getBean("tvs"); 
 	      TV tvs2 = (TV)sc.getBean("tvs"); 
 	      TV tvlg = (TV)sc.getBean("tv");

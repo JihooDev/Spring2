@@ -85,7 +85,7 @@ class AiTVs implements TV{
 	public void  volumeDown() { speaker.volumeDown(); }
 }
 
-public class TVUser03 {
+public class TVUser03_Speaker {
 
 	public static void main(String[] args) {
 		// 1. 스프링 컨테이너 구동(생성) 

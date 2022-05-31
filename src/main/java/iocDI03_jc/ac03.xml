@@ -8,4 +8,8 @@
    
    	<!-- xml 에서 SpeakerA 생성 후 @Autowired Test  -->   
 	<bean class="iocDI03_jc.SsTVsi" id="tvs" lazy-init="true"/>
+	
+	<bean class="iocDI03_jc.SpeakerA" id="spa" lazy-init="true" />
+	
+	
 </beans>

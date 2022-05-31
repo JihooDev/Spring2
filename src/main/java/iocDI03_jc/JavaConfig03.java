@@ -31,9 +31,9 @@ public class JavaConfig03 {
 	@Bean
 	public TV tva() {
 		return new AiTVsi();
-	}
+	} // 외부 전달용
 	
-	@Bean
+//	@Bean
 	public Speakeri spa() {
 		return new SpeakerA();
 	}

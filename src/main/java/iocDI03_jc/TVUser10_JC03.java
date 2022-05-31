@@ -19,7 +19,7 @@ interface Speakeri {
 
 class SpeakerA implements Speakeri{
 	public SpeakerA() {
-		System.out.println("~~ Speaker 생성자");
+		System.out.println("~~ SpeakerAA 생성자");
 	}
 	public void  volumeUp() { System.out.println("~~ AAA volumeUp ~~"); }
 	public void  volumeDown() { System.out.println("~~ AAA volumeDown ~~"); }

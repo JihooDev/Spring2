@@ -8,10 +8,14 @@
 	
 	<!-- 2) IOC/DI : 생성자 주입  ** 
 		-> bean 의 하위태그(constructor-arg) 로 생성자 매개변수를 정의
+		-> 매개변수 1개 , 2개 Test
+		-> index
 	-->
+	
+	<!-- => SpeakerA , B 교체시에도 소스를 수정할 필요없음   -->
 	<bean class="locDi01_xml.LgTVsi" id="tvl" lazy-init="true">
 		<constructor-arg name="speaker" ref="spb" />
-		<constructor-arg name="price" value="123456" />
+		<constructor-arg name="price"  value="123456" />
 		<constructor-arg name="color" value="blue" />
 		<!-- 한개라도 없으면 error 발생
 		3개가 있으면 3가지가 있는 멤버변수를 찾음

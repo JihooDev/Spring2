@@ -10,6 +10,11 @@
 		<config>src/main/java/locDi01_xml/app02.xml</config>
 		<config>src/main/java/locDi01_xml/app03.xml</config>
 		<config>src/main/java/locDi01_xml/app04.xml</config>
+		<config>src/main/java/IocDi02_anno/app05.xml</config>
+		<config>src/main/java/lifeCycle/lc01.xml</config>
+		<config>src/main/java/lifeCycle02_All/lc_all.xml</config>
+		<config>src/main/java/iocDI03_jc/ac02.xml</config>
+		<config>src/main/java/iocDI03_jc/ac03.xml</config>
 	</configs>
 	<autoconfigs>
 		<config>src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml</config>
